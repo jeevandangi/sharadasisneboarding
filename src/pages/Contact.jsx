@@ -22,8 +22,8 @@ const Contact = () => {
                     transition={{ duration: 0.5 }}
                 >
                     <p><strong>School Name:</strong> Sharada Sisne Boarding School</p>
-                    <p><strong>Address:</strong> Butwal, Rupandehi, Nepal</p>
-                    <p><strong>Phone:</strong> +977-71-XXXXX</p>
+                    <p><strong>Address:</strong> Tulsipur-5, Dang, Nepal</p>
+                    <p><strong>Phone:</strong> +977-9841891130</p>
                     <p><strong>Email:</strong> info@sharadasisne.edu.np</p>
 
                     {/* Optional: Embedded Map */}
