@@ -1,0 +1,22 @@
+[
+    {
+        "date": "2025-05-01",
+        "title": "Labour Day",
+        "type": "Holiday"
+    },
+    {
+        "date": "2025-05-10",
+        "title": "Parent Meeting",
+        "type": "Academic"
+    },
+    {
+        "date": "2025-05-25",
+        "title": "Buddha Jayanti",
+        "type": "Holiday"
+    },
+    {
+        "date": "2025-05-30",
+        "title": "Result Publish",
+        "type": "Academic"
+    }
+]

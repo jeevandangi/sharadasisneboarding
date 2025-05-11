@@ -1,0 +1,9 @@
+@import "tailwindcss";
+/* calendar.css */
+
+.event-day {
+    background-color: #16a34a !important;
+    /* Tailwind green-600 */
+    color: white !important;
+    border-radius: 50%;
+}
