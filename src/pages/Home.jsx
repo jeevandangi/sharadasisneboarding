@@ -14,7 +14,7 @@ const Home = () => {
             <section
                 className="relative bg-cover bg-center py-32 px-4 text-white shadow-xl bg-no-repeat"
                 style={{
-                    backgroundImage: "url('../../public/photo/all.JPG')",
+                    backgroundImage: "url('/public/photo/all.JPG')",
                 }}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -81,7 +81,7 @@ const Home = () => {
                     transition={{ duration: 1, delay: 1, ease: 'easeOut' }}
                 >
                     <img
-                        src="../../public/photo/about.jpg"
+                        src="/public/photo/about.jpg"
                         alt="School Building"
                         className="w-[600px] rounded-lg shadow-xl"
                     />

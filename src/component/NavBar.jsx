@@ -21,11 +21,17 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
                 {/* Logo and Location */}
-                <div className="flex flex-col">
-                    <Link to="/" className="text-2xl font-bold text-yellow-500">
-                        Sharada Sisne
-                    </Link>
-                    <span className="text-sm text-yellow-500 font-bold text-center  -mt-1">Tulsipur-5, Dang</span>
+                <div className=" flex items-center gap-4">
+                    <div className="">
+                        <img src="/public/photo/logo.png" alt="" className=" rounded-full h-10 " />
+                    </div>
+                    <div className="flex flex-col">
+
+                        <Link to="/" className="text-sm font-bold text-yellow-500">
+                            Sharada Sisne
+                        </Link>
+                        <span className="text-[12px] text-yellow-500 font-bold text-center  -mt-1">Tulsipur-5, Dang</span>
+                    </div>
                 </div>
 
 

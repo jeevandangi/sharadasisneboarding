@@ -86,9 +86,9 @@ const Footer = () => {
                     custom={3}
                 >
                     <h3 className="text-xl font-semibold mb-4 text-red-600">Contact Info</h3>
-                    <p className="text-sm text-gray-700">Sharada Sisne School, Gulmi, Nepal</p>
-                    <p className="text-sm text-gray-700">Phone: 9812345678</p>
-                    <p className="text-sm text-gray-700">Email: info@sharadasisne.edu.np</p>
+                    <p className="text-sm text-gray-700">Sharada Sisne School, Tulsipur-5, Dang, Nepal</p>
+                    <p className="text-sm text-gray-700">Phone: 9841891142</p>
+                    <p className="text-sm text-gray-700">Email: sharadasisneboardingschool@gmail.com</p>
                 </motion.div>
             </div>
 
