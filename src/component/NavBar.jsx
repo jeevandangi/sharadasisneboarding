@@ -17,27 +17,32 @@ const Navbar = () => {
 
 
     return (
-        <nav className="bg-red-600 text-white shadow-md sticky top-0 z-50">
+        <nav className=" bg-white  text-black shadow-md sticky top-0" style={{ zIndex: 1000 }}>
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
                 {/* Logo and Location */}
                 <div className=" flex items-center gap-4">
-                    <div className="">
-                        <img src="/public/photo/logo.png" alt="" className=" rounded-full h-10 " />
-                    </div>
+
                     <div className="flex flex-col">
 
-                        <Link to="/" className="text-sm font-bold text-yellow-500">
-                            Sharada Sisne
+                        <Link to="/" className="text-lg greatvibes-font italic font-bold text-red-500">
+                            <h1 class="text-4xl font-bold">
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400 greatvibes-font  ">
+                                    Sharada
+                                </span>
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400  greatvibes-font">
+                                    Sisne
+                                </span>
+                            </h1>
+
                         </Link>
-                        <span className="text-[12px] text-yellow-500 font-bold text-center  -mt-1">Tulsipur-5, Dang</span>
                     </div>
                 </div>
 
 
                 {/* Hamburger Button */}
                 <button
-                    className="md:hidden p-2 text-white"
+                    className="md:hidden p-2 text-blue"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     <svg
@@ -63,8 +68,8 @@ const Navbar = () => {
                             key={path}
                             to={path}
                             className={({ isActive }) =>
-                                `text-sm font-medium ${isActive ? "text-yellow-500" : "text-white"
-                                } hover:text-yellow-400`
+                                `text-md font-medium ${isActive ? "text-blue-500 " : "text-black"
+                                } hover:text-black`
                             }
                         >
                             {label}
@@ -75,16 +80,16 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden fixed inset-0 bg-black bg-opacity-50 transition-all duration-300 ease-in-out transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+                className={`md:hidden fixed inset-0 bg-blue-200 bg-opacity-80 transition-all duration-300 ease-in-out transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
                 onClick={() => setIsMenuOpen(false)}
             >
                 <div
-                    className={`bg-red-600 w-64 h-full shadow-lg p-6 transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"
+                    className={`bg-white w-64 h-full shadow-lg p-6 transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"
                         } transition-all duration-300 ease-in-out`}
                 >
                     <button
-                        className="absolute top-4 right-4 text-white"
+                        className="absolute top-4 right-4 text-black"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         <svg
@@ -108,7 +113,7 @@ const Navbar = () => {
                                 <NavLink
                                     to={path}
                                     className={({ isActive }) =>
-                                        `block text-lg ${isActive ? "text-yellow-500" : "text-white"
+                                        `block text-lg ${isActive ? "text-blue-500" : "text-black"
                                         }`
                                     }
                                 >
