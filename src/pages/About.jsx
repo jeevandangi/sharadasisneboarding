@@ -152,57 +152,66 @@ const About = () => {
             </motion.section>
 
             {/* Staff Sections */}
-            <section id="staff" className="py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-3xl font-extrabold text-red-600 text-center mb-8">Our Dedicated Staff</h2>
-
-                    {/* Admin Staff */}
-                    <motion.div
-                        className="mb-12"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={stagger}
-                    >
-                        <h3 className="text-2xl font-semibold text-red-600 mb-4">Administration Staff</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                            {renderStaff(adminStaff)}
-                        </div>
-                    </motion.div>
-
-                    {/* Teacher Staff */}
-                    <motion.div
-                        className="mb-12"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={stagger}
-                    >
-                        <h3 className="text-2xl font-semibold text-red-600 mb-4">Teacher Staff</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                            {renderStaff(teacherStaff)}
-                        </div>
-                    </motion.div>
-
-                    {/* Support Staff */}
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={stagger}
-                    >
-                        <h3 className="text-2xl font-semibold text-red-600 mb-4">Support Staff</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                            {renderStaff(supportStaff)}
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
 
             {/* Footer */}
 
-        </div>
+        </div >
     );
 };
 
 export default About;
+
+
+// const staff = () => {
+//     return (
+//         <>
+//             <section id="staff" className="py-16 bg-gray-100">
+//                 <div className="max-w-7xl mx-auto px-4">
+//                     <h2 className="text-3xl font-extrabold text-red-600 text-center mb-8">Our Dedicated Staff</h2>
+
+//                     {/* Admin Staff */}
+//                     <motion.div
+//                         className="mb-12"
+//                         initial="hidden"
+//                         whileInView="visible"
+//                         viewport={{ once: true }}
+//                         variants={stagger}
+//                     >
+//                         <h3 className="text-2xl font-semibold text-red-600 mb-4">Administration Staff</h3>
+//                         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+//                             {renderStaff(adminStaff)}
+//                         </div>
+//                     </motion.div>
+
+//                     {/* Teacher Staff */}
+//                     <motion.div
+//                         className="mb-12"
+//                         initial="hidden"
+//                         whileInView="visible"
+//                         viewport={{ once: true }}
+//                         variants={stagger}
+//                     >
+//                         <h3 className="text-2xl font-semibold text-red-600 mb-4">Teacher Staff</h3>
+//                         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+//                             {renderStaff(teacherStaff)}
+//                         </div>
+//                     </motion.div>
+
+//                     {/* Support Staff */}
+//                     <motion.div
+//                         initial="hidden"
+//                         whileInView="visible"
+//                         viewport={{ once: true }}
+//                         variants={stagger}
+//                     >
+//                         <h3 className="text-2xl font-semibold text-red-600 mb-4">Support Staff</h3>
+//                         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+//                             {renderStaff(supportStaff)}
+//                         </div>
+//                     </motion.div>
+//                 </div>
+//             </section >
+
+//         </>
+//     )
+// }

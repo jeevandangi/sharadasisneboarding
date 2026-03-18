@@ -29,7 +29,7 @@ const Admission = () => {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    Admissions are open for <span className="font-semibold text-gray-800">Playgroup to Class 9</span>. We welcome new students to join our supportive and enriching learning environment.
+                    Admissions are open for the academic year 2083/2084 from <span className="font-semibold text-gray-800">Playgroup to Class 9</span>. We welcome new students to join our supportive and enriching learning environment.
                 </motion.p>
 
                 {/* Steps */}

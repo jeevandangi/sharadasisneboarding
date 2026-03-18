@@ -64,16 +64,15 @@ const Footer = () => {
                 >
                     <h3 className="text-xl font-semibold mb-4 text-red-600">Follow Us</h3>
                     <div className="flex gap-4">
-                        {[Facebook, Instagram, Youtube, Linkedin].map((Icon, index) => (
-                            <motion.a
-                                key={index}
-                                href="#"
-                                whileHover={{ scale: 1.1 }}
-                                className="p-2 rounded-full bg-gradient-to-br from-red-500 to-yellow-400 text-white shadow-md"
-                            >
-                                <Icon size={20} />
-                            </motion.a>
-                        ))}
+
+                        <motion.a
+                            href="https://www.facebook.com/profile.php?id=100063692702730"
+                            whileHover={{ scale: 1.1 }}
+                            className="p-2 rounded-full bg-gradient-to-br from-red-500 to-yellow-400 text-white shadow-md"
+                        >
+                            <Facebook size={20} />
+                        </motion.a>
+
                     </div>
                 </motion.div>
 
@@ -87,7 +86,7 @@ const Footer = () => {
                 >
                     <h3 className="text-xl font-semibold mb-4 text-red-600">Contact Info</h3>
                     <p className="text-sm text-gray-700">Sharada Sisne School, Tulsipur-5, Dang, Nepal</p>
-                    <p className="text-sm text-gray-700">Phone: 9841891142</p>
+                    <p className="text-sm text-gray-700">Phone: 082521520</p>
                     <p className="text-sm text-gray-700">Email: sharadasisneboardingschool@gmail.com</p>
                 </motion.div>
             </div>

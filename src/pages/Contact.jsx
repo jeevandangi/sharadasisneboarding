@@ -28,7 +28,7 @@ const Contact = () => {
 
                     {/* Optional: Embedded Map */}
                     <div className="mt-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1684.1216489102137!2d82.30004564343588!3d28.142235380887822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2snp!4v1746960628837!5m2!1sen!2snp" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1684.1216489102137!2d82.30004564343588!3d28.142235380887822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2snp!4v1746960628837!5m2!1sen!2snp" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className=" w-auto"></iframe>
                     </div>
                 </motion.div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import routes from "./routes/routes";
+import ScrollToTop from "./component/ScrollToTop";
 
 const renderRoutes = (routes) =>
   routes.map(({ path, element, children }, index) => (
@@ -15,6 +16,7 @@ const renderRoutes = (routes) =>
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>{renderRoutes(routes)}</Routes>
     </Router>
   );
