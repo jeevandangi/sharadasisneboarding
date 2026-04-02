@@ -69,14 +69,14 @@ const Navbar = () => {
                             key={path}
                             to={path}
                             className={({ isActive }) =>
-                                `text-md font-medium ${isActive ? "text-blue-500 " : "text-black"
+                                `text-md font-semibold ${isActive ? "text-blue-500 " : "text-black"
                                 } hover:text-black`
                             }
                         >
                             {label}
                         </NavLink>
                     ))}
-                    <NavLink to={"/login"} className=" bg-green-500 text-white px-3 py-0.5">
+                    <NavLink to={"/login"} className=" font-semibold bg-green-500 text-white px-3 py-0.5">
                         Login
                     </NavLink>
                 </div>

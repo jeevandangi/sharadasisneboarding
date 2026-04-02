@@ -139,7 +139,7 @@ const Home = () => {
                         </motion.p>
 
                         <motion.p
-                            className="mt-5 text-base md:text-lg text-gray-400 leading-relaxed max-w-lg"
+                            className="mt-5 text-base md:text-lg text-gray-200 font-semibold leading-relaxed max-w-lg"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
@@ -292,7 +292,7 @@ const Home = () => {
                         <img src="/photo/about.jpg" alt="About" className="rounded-2xl w-full object-cover shadow-xl" />
                         {/* Floating badge */}
                         <div className="absolute -bottom-5 -right-5 bg-amber-400 text-gray-900 rounded-2xl px-6 py-4 shadow-lg hidden md:block">
-                            <p className="text-3xl font-black">25+</p>
+                            <p className="text-3xl font-black">{`${excellent}+`}</p>
                             <p className="text-xs font-semibold mt-0.5">Years of Excellence</p>
                         </div>
                         {/* Accent strip */}
