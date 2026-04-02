@@ -7,6 +7,7 @@ import Gallery from "../pages/Gallery";
 import Contact from "../pages/Contact";
 import Notices from "../pages/Notices";
 import Layout from "../Layout/Layout";
+import Login from "../pages/Login";
 
 const routes = [
     {
@@ -21,6 +22,7 @@ const routes = [
             { path: "/gallery", element: <Gallery /> },
             { path: "/contact", element: <Contact /> },
             { path: "/notices", element: <Notices /> },
+            { path: "/login", element: <Login /> },
         ],
     },
 ];

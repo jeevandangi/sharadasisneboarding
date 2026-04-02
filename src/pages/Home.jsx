@@ -30,8 +30,8 @@ const Home = () => {
             >
 
                 <motion.div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/photo/child.jpeg')" }}
+                    className="absolute inset-0  bg-cover bg-center"
+                    style={{ backgroundImage: "url('/photo/homeone.JPG')" }}
                     initial={{ scale: 1.1 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5 }}
@@ -39,7 +39,7 @@ const Home = () => {
 
 
                 <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent"
+                    className="absolute inset-0 bg-gradient-to-r from-cyan-800 /90 via-cyan-500/30 to-transparent"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.5, duration: 1 }}
@@ -53,13 +53,13 @@ const Home = () => {
                         animate={{ x: 0, opacity: 1 }}
                         transition={{ delay: 0.5, duration: 1 }}
                     >
-                        <h1 className="text-3xl md:text-6xl font-bold">Sharada Sisne</h1>
-                        <h2 className="text-3xl text-orange-400 font-semibold italic mt-2">Boarding School</h2>
+                        <h1 className="text-6xl uppercase md:text-6xl font-bold text-orange-700">Sharada Sisne</h1>
+                        <h2 className="text-3xl text-yellow-300 font-semibold italic uppercase mt-2">Boarding School</h2>
                         <p className="mt-6 text-sm md:text-xl text-gray-200 max-w-md">
                             Discover the vibrant learning environment of Sharada Sisne. From classrooms to playgrounds, take a tour and see how we nurture young minds with care, creativity, and a strong foundation for the future.
                         </p>
                         <motion.button
-                            className="mt-6 px-4 py-0.5 md:px-6 md:py-3 bg-sky-400 hover:bg-sky-500 text-white font-medium rounded shadow-lg"
+                            className="mt-6 px-4 py-0.5 md:px-6 md:py-3 bg-red-400 hover:bg-sky-500 text-white font-medium rounded shadow-lg"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >

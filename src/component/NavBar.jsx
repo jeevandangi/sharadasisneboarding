@@ -13,6 +13,7 @@ const Navbar = () => {
         { path: "/gallery", label: "Gallery" },
         { path: "/notices", label: "Notices" },
         { path: "/contact", label: "Contact" },
+
     ];
 
 
@@ -75,6 +76,9 @@ const Navbar = () => {
                             {label}
                         </NavLink>
                     ))}
+                    <NavLink to={"/login"} className=" bg-green-500 text-white px-3 py-0.5">
+                        Login
+                    </NavLink>
                 </div>
             </div>
 
@@ -121,6 +125,9 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                         ))}
+                        <NavLink to={"/login"} className="  text-black px-3 py-0.5">
+                            Login
+                        </NavLink>
                     </ul>
                 </div>
             </div>
