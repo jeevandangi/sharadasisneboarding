@@ -4,11 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 // ─── Nepali (BS) Calendar Engine ──────────────────────────────────────────────
 // Days in each month of BS years 2079–2086
 const BS_MONTHS_DATA = {
-    2079: [31, 32, 31, 32, 31, 30, 30, 30, 29, 29, 30, 30],
-    2080: [31, 31, 32, 32, 31, 30, 30, 30, 29, 30, 30, 30],
-    2081: [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
-    2082: [31, 32, 31, 32, 31, 30, 30, 30, 29, 29, 30, 31],
-    2083: [30, 32, 31, 32, 31, 30, 30, 30, 29, 30, 29, 31],
+
+
+    2082: [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
+    2083: [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
     2084: [31, 31, 32, 31, 31, 31, 30, 29, 30, 29, 30, 30],
     2085: [31, 31, 32, 32, 31, 30, 30, 29, 30, 29, 30, 30],
     2086: [31, 32, 31, 32, 31, 30, 30, 30, 29, 29, 30, 30],
@@ -30,8 +29,8 @@ function adToBS(adYear, adMonth, adDay) {
     const given = new Date(adYear, adMonth - 1, adDay);
     let diffDays = Math.round((given - refAD) / 86400000);
 
-    let bsYear = 2000, bsMonth = 1, bsDay = 1;
-    for (let y = 2000; y <= 2090; y++) {
+    let bsYear = 2082, bsMonth = 1, bsDay = 1;
+    for (let y = 2082; y <= 2090; y++) {
         const months = BS_MONTHS_DATA[y] || BS_MONTHS_DATA[2086];
         for (let m = 0; m < 12; m++) {
             if (diffDays <= months[m]) { bsDay = diffDays; return { year: y, month: m + 1, day: bsDay }; }
@@ -45,7 +44,7 @@ function adToBS(adYear, adMonth, adDay) {
 function bsMonthStartDay(bsYear, bsMonth) {
     // Find AD date of 1 Baisakh of given BS year by reverse mapping
     // We use a known reference: 1 Baisakh 2080 BS = 14 April 2023 AD
-    const ref = { bsYear: 2080, bsMonth: 1, adYear: 2023, adMonth: 4, adDay: 14 };
+    const ref = { bsYear: 2082, bsMonth: 1, adYear: 2025, adMonth: 4, adDay: 14 };
     let days = 0;
     if (bsYear > ref.bsYear || (bsYear === ref.bsYear && bsMonth > ref.bsMonth)) {
         for (let y = ref.bsYear; y <= bsYear; y++) {
@@ -170,7 +169,7 @@ export default function Events() {
                     <p style={s.subtitle}>Nepali Bikram Sambat calendar with events, exams & holidays</p>
                 </motion.div>
 
-                <div style={s.grid}>
+                <div className=" sm:grid  sm:grid-cols-2 flex gap-10 flex-col">
                     {/* ── LEFT: Nepali Calendar ── */}
                     <motion.div style={s.calCard} variants={fadeUp} initial="hidden" animate="visible" custom={1}>
                         {/* Month nav */}
@@ -364,7 +363,7 @@ const s = {
     titleRed: { color: "#dc2626" },
     subtitle: { fontSize: "0.95rem", color: "#777", margin: 0 },
 
-    grid: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "28px", alignItems: "start" },
+    grid: { display: "grid", gridTemplateColumns: "1fr", gap: "28px", alignItems: "start" },
 
     // Calendar card
     calCard: {
