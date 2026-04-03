@@ -199,7 +199,7 @@ const Home = () => {
             <section className="max-w-7xl mx-auto px-6 md:px-12 -mt-6 relative z-20">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {[
-                        { icon: <HiOutlineAcademicCap size={22} />, title: "Admissions Open", sub: "Apply for 2025–26", color: "text-amber-600 bg-amber-50 border-amber-200" },
+                        { icon: <HiOutlineAcademicCap size={22} />, title: "Admissions Open", sub: "Apply for 2083–84", color: "text-amber-600 bg-amber-50 border-amber-200" },
                         { icon: <HiOutlineUserGroup size={22} />, title: "Parent Portal", sub: "Track your child's progress", color: "text-sky-600 bg-sky-50 border-sky-200" },
                         { icon: <HiOutlineStar size={22} />, title: "Scholarships", sub: "Merit-based programs", color: "text-emerald-600 bg-emerald-50 border-emerald-200" },
                     ].map((item, i) => (
