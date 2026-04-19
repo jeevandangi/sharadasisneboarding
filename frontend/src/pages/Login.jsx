@@ -47,7 +47,7 @@ export default function Login() {
                             transition={{ delay: 0.15, duration: 0.5 }}
                         >
                             <div className="w-14  h-14 rounded-full bg-white border border-amber-500/30 flex items-center justify-center mb-4">
-                                <img src="../../public/photo/logo.png" alt="" className=" rounded-full" />
+                                <img src="/photo/logo.png" alt="" className=" rounded-full" />
                             </div>
                             <h1 className="text-white font-black text-xl tracking-tight text-center">
                                 Sharada Sisne

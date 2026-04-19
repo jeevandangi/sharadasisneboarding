@@ -36,7 +36,7 @@ const Footer = () => {
                     <motion.div style={s.brandCol} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0}>
                         <div style={s.logoWrap}>
                             <div style={s.logoIcon} className=' rounded-full'>
-                                <img src="../../public/photo/logo.jpg" alt="" className=" rounded-full" />
+                                <img src="/photo/logo.jpg" alt="" className=" rounded-full" />
                             </div>
                             <div>
                                 <h2 style={s.brandName}>Sharada Sisne</h2>

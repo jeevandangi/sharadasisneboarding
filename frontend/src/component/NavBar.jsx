@@ -51,7 +51,7 @@ export default function Navbar() {
             background: "linear-gradient(135deg,#dc2626,#991b1b)",
             display: "flex", alignItems: "center", justifyContent: "center",
         }}>
-            <img src="../../public/photo/logo.jpg" alt="" className=" rounded-full" />
+            <img src="/photo/logo.jpg" alt="" className=" rounded-full" />
         </div>
     );
 
